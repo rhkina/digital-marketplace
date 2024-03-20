@@ -1,17 +1,8 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import { Poppins as FontSans } from 'next/font/google'
 import { cn } from '@/lib/utils'
 import Navbar from '@/components/Navbar'
-
-const fontSans = FontSans({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
-  style: ['normal', 'italic'],
-  variable: '--font-sans',
-  display: 'swap',
-  adjustFontFallback: false,
-})
+import { fontSans } from '@/lib/utils'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
